@@ -49,36 +49,27 @@ In this project we have utilized Python to build and evaluate several machine le
 </p
     
  
-  
-<p align="center">
-   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%202.jpg">
-</p 
+![Image 2](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%202.jpg)  
+
 
   
-# Undersampling
+### Undersampling
   
 Also, testing an undersampling algorithms to determine which algorithm results in the best performance compared to the oversampling algorithms above. The undersampling of the data done by the Cluster Centroids algorithm. 
   
-<p align="center">
-   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%203.jpg">
-</p  
+![Image 3](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%203.jpg)
 
   
-  
-### Deliverable 2 SMOTEENN
-  
+### Over/Under Sampling: SMOTEENN
   
 Another test combined over- and under-sampling algorithm to determine if the algorithm results in the best performance compared to the other sampling algorithms above. 
   
   
-<p align="center">
-   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%204.jpg">
-</p  
+![Image 4](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%204.jpg)  
   
  
-## Deliverable 3 Ensemble Classifiers to Predict Credit Risk 
+## Ensemble Classifiers to Predict Credit Risk 
   
-### Ensemble Learners
 We compared two ensemble algorithms to determine which algorithm results in the best performance. You will train a Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier. 
 
   
@@ -87,10 +78,7 @@ We compared two ensemble algorithms to determine which algorithm results in the 
 </p  
 
   
-  
-<p align="right">
-   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%206.jpg">
-</p  
+![Image 6](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%206.jpg)  
 
 
 # Analysis
