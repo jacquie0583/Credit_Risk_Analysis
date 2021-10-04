@@ -55,7 +55,7 @@ In this project we have utilized Python to build and evaluate several machine le
 </p 
 
   
-##  Undersampling
+# Undersampling
   
 Also, testing an undersampling algorithms to determine which algorithm results in the best performance compared to the oversampling algorithms above. The undersampling of the data done by the Cluster Centroids algorithm. 
   
