@@ -65,10 +65,10 @@ Also, testing an undersampling algorithms to determine which algorithm results i
 Another test combined over- and under-sampling algorithm to determine if the algorithm results in the best performance compared to the other sampling algorithms above. 
   
   
-![Image 4](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%204.jpg)  
+![Image 4](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%204.jpg)  
   
  
-## Ensemble Classifiers to Predict Credit Risk 
+### Ensemble Classifiers 
   
 We compared two ensemble algorithms to determine which algorithm results in the best performance. You will train a Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier. 
 
@@ -81,9 +81,7 @@ We compared two ensemble algorithms to determine which algorithm results in the 
 ![Image 6](https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%206.jpg)  
 
 
-# Analysis
-  
-Based on the accuracy score, the Ensemble Classifiers proved to be the most precise. EasyEnsembleClassifierp provides a highest Score for all Risk loans. The precision is low or none for all the models. In general, above the 90% of the current analysis, utlizing EasyEnsembleClassifier will perform a High-Risk loan precision as a great value for the overall analysis.
+## Terms 
 The ML models process of fitting, reshaping, and training the same data is carried out significantly different. The evaluating parameters followed by a description of their origin follow: 
 
 ACCURACY SCORE reports a percentage of precision of the predictions compared to the actual results. However, it is not enough just to see that results, especially with unbalanced data.
@@ -95,3 +93,19 @@ RECALL is the ability of the classifier to find all the positive samples. A low 
 
 FI SCORE is weighted average of the true positive rate (recall) and precision, where the best score is 1.0. Equation: F1 score = 2(Precision x Sensititivity)/(Precision + Sensitivity) The F1 Score equation is: 2*((precisionrecall)/(precision+recall)). It is also called the F Score or the F Measure. Put another way, the F1 score conveys the balance between the precision and the recall. The F1 for the All No Recurrence model is 2((0*0)/0+0) or 0.
 
+#  Analysis 
+Based on the accuracy scores, the Ensemble Classifiers proved to be the most precise. EasyEnsembleClassifierp provides a highest Score for all Risk loans. The precision is low or none for all the models. In general, above the 90% of the current analysis, utlizing EasyEnsembleClassifier will perform a High-Risk loan precision as a great value for the overall analysis.  Models, Naïve Random Over Sample, SMOTE Oversampling, Cluster Centroids Undersampling and SMOTEENN, performance roughly hoovers at the 50% accuracy scores, 66%, 65%, 65%, and 54% respectively.   
+
+A well know principle, “Accuracy matters” yet only up to a certain extent. Other performance metrics like Confusion Matrix, Precision-Recall, and F1-Score should be consider along with Accuracy while evaluating a Machine Learning model.  Precision for all four models are 0.01 for high-risk loans and 1.00 for low risk loans. Low precision scores for high-risk loans is based on the large number of false positives, meaning that many of low-risk loans were marked as high-risk loans. High score for low-risk loans indicate that nearly all low risk scores were marked correctly; however, lower recall score (0.58 for naive Naive Random Oversampling and Logistic Regression, for example) indicates that there were quite a few low risks loans that were market as high risk, when that was not the case. Actual high-risk loans have slightly better scores on recall (0.74 for naive Naive Random Oversampling and Logistic Regression, for example) indicating that there weren't as many false negatives or not many high-risk loans were marked as low risk loans.  
+
+Generally speaking, the precision-recall values keep changing as you increase or decrease the threshold. Building a model with higher precision or recall depends on the problem statement you’re dealing with and its requirements.
+
+Precision-Recall values can be very useful to understand the performance of a specific algorithm and also helps in producing results based on the requirements. But when it comes to comparing several algorithms trained on the same data, it becomes difficult to understand which algorithm suits the data better solely based on the Precision-Recall values.  The F1 score characterized as a single summary statistic of precision and sensitivity.  For the ensemble the high-risk 0.07 and low-risk is 0.95 occurs when the sensitivity is very high, while the precision is very low. We have a trade-off between sensitivity and precision, and that a balance must be struck between the two. A useful way to think about the F1 score is that a pronounced imbalance between sensitivity and precision will yield a low F1 score.  Having a precision or recall value as 0 is not desirable and hence it will give us the F1 score of 0 (lowest). On the other hand, if both the precision and recall value is 1, it’ll give us the F1 score of 1 indicating perfect precision-recall values. All the other intermediate values of the F1 score ranges between 0 and 1.
+
+The Ensemble model’s accuracy scores are both 90% for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier. Recall scores for both model and both - low and high-risk scores and precision for low risk were high, meaning very good accuracy. Precision for high-risk loans in both models were not high at 0.03 and 0.09 for Balanced Random Forest Classifier and Easy Ensemble AdaBoost Classifier respectively, indicating that there were large number of false positives, meaning that large number of low-risk loans were marked as high risk.
+
+The ensemble models demonstrated more accuracy than the other four models.  However, they might be prone to overfitting. If that occurs and we don't get desired results when working with new data set, we can do some further fine-tuning (pruning) to avoid the overfitting. Observing the confusion matrix along with the accuracy scores, an identification that the model is overfitting on the training dataset could be made as it is predicting every unknown data point as a low-risk loan. If it wasn’t for the confusion matrix, we would have never known the underlying issue.  Using these metrics, the Confusion Matrix, Precision-Recall, and F1 Score, assisted in refining the evaluation of the model’s performance. 
+Suggestions for future would be to evaluate using a different data set or using other machine learning algorithms.
+
+
+  
