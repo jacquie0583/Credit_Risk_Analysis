@@ -17,7 +17,8 @@ In this project we have utilized Python to build and evaluate several machine le
   
   •	Use ensemble and resampling techniques to improve model performance.
   
-  ##  Analysis Reports Used to Predict Credit Risk
+##  Analysis Reports Used to Predict Credit Risk
+
 1.	Oversampling Models:  naive random oversampling algorithm and the SMOTE algorithm
 2.	Undersample Model: Cluster Centroids algorithm
 3.	Resample Model:  used the SMOTEENN algorithm SMOTEENN Algorithm
@@ -39,8 +40,70 @@ In this project we have utilized Python to build and evaluate several machine le
   	imbalanced-learn package in our mlenv environment.
 
 
-##  Results:
-Resampling Models to Predict Credit Risk
+##  Results:  Resampling Models to Predict Credit Risk
 
 ### Oversampling
+
+<p align="center">
+   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%201.jpg">
+</p
+    
+ 
+  
+<p align="center">
+   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%202.jpg">
+</p 
+
+  
+##  Undersampling
+  
+Also, testing an undersampling algorithms to determine which algorithm results in the best performance compared to the oversampling algorithms above. The undersampling of the data done by the Cluster Centroids algorithm. 
+  
+<p align="center">
+   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%203.jpg">
+</p  
+
+  
+  
+### Deliverable 2 SMOTEENN
+  
+  
+Another test combined over- and under-sampling algorithm to determine if the algorithm results in the best performance compared to the other sampling algorithms above. 
+  
+  
+<p align="center">
+   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/Image%204.jpg">
+</p  
+  
+ 
+## Deliverable 3 Ensemble Classifiers to Predict Credit Risk 
+  
+### Ensemble Learners
+We compared two ensemble algorithms to determine which algorithm results in the best performance. You will train a Balanced Random Forest Classifier and an Easy Ensemble AdaBoost classifier. 
+
+  
+<p align="center">
+   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%205.jpg">
+</p  
+
+  
+  
+<p align="right">
+   <img width="400" height="200" src="https://github.com/jacquie0583/Credit_Risk_Analysis/blob/main/image%206.jpg">
+</p  
+
+
+# Analysis
+  
+Based on the accuracy score, the Ensemble Classifiers proved to be the most precise. EasyEnsembleClassifierp provides a highest Score for all Risk loans. The precision is low or none for all the models. In general, above the 90% of the current analysis, utlizing EasyEnsembleClassifier will perform a High-Risk loan precision as a great value for the overall analysis.
+The ML models process of fitting, reshaping, and training the same data is carried out significantly different. The evaluating parameters followed by a description of their origin follow: 
+
+ACCURACY SCORE reports a percentage of precision of the predictions compared to the actual results. However, it is not enough just to see that results, especially with unbalanced data.
+Equation: accuracy score = number of correct prediction/total number of predictions.
+
+PRECISION is the measure of how reliable a positive classification is. A low precision is indicative of a large number of false positives. Equation: Precision = TP/(TP + FP)
+
+RECALL is the ability of the classifier to find all the positive samples. A low recall is indicative of a large number of false negatives Equation: Recall = TP/(TP+FN)
+
+FI SCORE is weighted average of the true positive rate (recall) and precision, where the best score is 1.0. Equation: F1 score = 2(Precision x Sensititivity)/(Precision + Sensitivity) The F1 Score equation is: 2*((precisionrecall)/(precision+recall)). It is also called the F Score or the F Measure. Put another way, the F1 score conveys the balance between the precision and the recall. The F1 for the All No Recurrence model is 2((0*0)/0+0) or 0.
 
